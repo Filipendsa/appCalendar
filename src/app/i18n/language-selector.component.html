@@ -1,0 +1,13 @@
+<button *ngIf="icon; else text" mat-icon-button [matMenuTriggerFor]="languageMenu" class="btnMenu">
+  <mat-icon>language</mat-icon>
+</button>
+<ng-template #text>
+  <button mat-raised-button [matMenuTriggerFor]="languageMenu" class="btnMenu">
+    {{ currentLanguage }}
+  </button>
+</ng-template>
+<mat-menu #languageMenu="matMenu" class="langMenu">
+  <button class="btnMenu" mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
+    {{ language }}
+  </button>
+</mat-menu>

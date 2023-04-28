@@ -1,0 +1,62 @@
+/*
+ * Application global variables.
+ */
+@import "~@angular/material/theming";
+$app-primary: mat-palette($mat-blue);
+$app-accent: mat-palette($mat-pink, A200, A100, A400);
+$app-warn: mat-palette($mat-red);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+$material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
+
+:root {
+  --header-height: 3rem;
+
+  /*==================== Colors ============================*/
+  --hue-color: 142; /* purple=250  green=142 blue=230 pink=340*/
+
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --white-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /*==================== Font and typography ================*/
+  --body-font: "Poppins", sans-serif;
+
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.12;
+  --normal-font-size: 0.93rem;
+  --small-font-size: 0.81rem;
+  --smaller-font-size: 0.75rem;
+
+  /*==================== Font weight ========================*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*==================== Margenes Bottom ====================*/
+
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*====================z index =============================*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}

@@ -1,0 +1,27 @@
+@import "src/theme/theme-variables";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--first-color);
+  color: var(--first-color-lighter);
+}
+
+.brand {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+.menu-button {
+  margin-right: 1rem;
+}
+
+.btnMenu:hover {
+  color: var(--white-color);
+  background-color: var(--first-color-alt);
+}
